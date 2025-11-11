@@ -1,6 +1,8 @@
 // src/services/api.ts
 
-const API_BASE_URL = "http://localhost:8095";
+const API_BASE_URL =
+  import.meta.env.VITE_BACKEND_URL || "http://backend:8080";
+
 
 interface DashboardData {
   totalAppointments: number;
